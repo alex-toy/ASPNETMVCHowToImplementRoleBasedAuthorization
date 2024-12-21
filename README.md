@@ -4,15 +4,16 @@ In this project, we will implement **Identity** service in **ASP.NET MVC** appli
 
 ## Packages
 
-````
+```
 Microsoft.EntityFrameworkCore
 Microsoft.EntityFrameworkCore.SqlServer
-
 Microsoft.EntityFrameworkCore.Tools
 Microsoft.AspNetCore.Identity.EntityFrameworkCore
 ```
 
+## Identity
 
-<img src="/pictures/cookie.png" title="cookie"  width="900">
+- add Identity
+<img src="/pictures/identity.png" title="identity"  width="900">
 
 
