@@ -16,7 +16,10 @@ namespace SalesCRMApp
             string DefaultConnectionString = builder.Configuration["ConnectionStrings:DefaultConnection"]!;
             builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(DefaultConnectionString));
 
-            builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+            builder.Services
+                .AddDefaultIdentity<IdentityUser>()
+                .AddDefaultTokenProviders()
+                .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
             var app = builder.Build();

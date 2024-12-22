@@ -6,7 +6,7 @@ using SalesCRMApp.Repo;
 
 namespace SalesCRMApp.Controllers
 {
-    [Authorize]
+    [Authorize(Roles = "Sales")]
     public class SalesLeadController : Controller
     {
         private readonly ApplicationDbContext _context;
